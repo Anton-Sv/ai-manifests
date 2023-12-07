@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-demo
+  name: resources-demo
 spec:
   containers:
     - name: demo-app
