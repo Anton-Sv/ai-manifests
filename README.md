@@ -1,15 +1,15 @@
 # ai-manifests
 Collection of k8s yaml manifests, made by ai
 
-| NAME                 | PROMPT   | DESCRIPTION           | EXAMPLE  |
-|----------------------|----------|-----------------------|----------|
-| pod-demo             |          | Single pod            | LINK     |
-| liveness-probe-demo  |          | Liveness probe        | LINK     |
-| readiness-probe-demo |          | Readiness probe       | LINK     |
-| volume-mounts-demo   |          | Mounting of volumes   | LINK     |
-| cronjob-demo         |          | Cron job              | LINK     |
-| job-demo             |          | Job for pod           | LINK     |
-| multicontainer-demo  |          | Multicontainer deploy | LINK     |
-| resources-demo       |          | Resources limit       | LINK     |
-| secret-env-demo      |          | Add secret envs       | LINK     |
+| NAME                    | PROMPT                                                                                                                                                                                                                   | DESCRIPTION           | EXAMPLE                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|-----------------------------------------------------------|
+| app.yaml                | Create a pod with name demo, label demo and open port 8080, by using a container europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0. Container name is demo-app.                                            | Simple pod            | [app.yaml](./yaml/app.yaml)                               |
+| app-livenessProbe.yaml  | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Liveness probe        | [app-livenessProbe.yaml](./yaml/app-livenessProbe.yaml)   |
+| app-readinessProbe.yaml | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Readiness probe       | [app-readinessProbe.yaml](./yaml/app-readinessProbe.yaml) |
+| app-volumeMounts.yaml   | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Mounting of volumes   | [app-volumeMounts.yaml](./yaml/app-volumeMounts.yaml)     |
+| app-cronjob.yaml        | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Cron job              | [app-cronjob.yaml](./yaml/app-cronjob.yaml)               |
+| app-job.yaml            | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Job for pod           | [app-job.yaml](./yaml/app-job.yaml)                       |
+| app-multicontainer.yaml | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Multicontainer deploy | [app-multicontainer.yaml](./yaml/app-multicontainer.yaml) |
+| app-resources.yaml      | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Resources limit       | [app-resources.yaml](./yaml/app-resources.yaml)           |
+| app-secret-env.yaml     | Create a liveness probe pod with conteiner name demo-app, source image europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0, httpget on port 8080 with 15 sec delay and 30 sec period Liveness probe.         | Add secret envs       | [app-secret-env.yaml](./yaml/app-secret-env.yaml)         |
 
