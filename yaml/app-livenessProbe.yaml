@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: liveness-probe-demo
+spec:
+  containers:
+  - name: demo-app
+    image: europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0
+    livenessProbe:
+      httpGet:
+        path: /
+        port: 8080
+      initialDelaySeconds: 15
+      periodSeconds: 30

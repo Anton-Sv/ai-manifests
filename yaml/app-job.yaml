@@ -1,0 +1,12 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-demo
+spec:
+  template:
+    spec:
+      containers:
+      - name: demo-app
+        image: europe-west1-docker.pkg.dev/k8s-k3s-406521/k8s-repo/demo:v1.0.0
+      restartPolicy: Never
